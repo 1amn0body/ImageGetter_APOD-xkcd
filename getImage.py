@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup as bs
-from os.path import expanduser
+#from os.path import expanduser, exists
 from os.path import basename
-from os import sep
+#from pathlib import Path
 
 url = "https://xkcd.com/"
 html_doc = requests.get(url).text
@@ -14,10 +14,14 @@ soup = bs(html_doc, 'html.parser')
 imgLink = soup.find(id="comic").find('img')['src']
 print(imgLink)
 
-home = expanduser("~")
-print(home)
+#userPath = expanduser("~")
+#filePath = Path("Desktop")
 
-#with open(home +  "" sep + "", "wb") as dir:
+#print(Path.cwd()) #now active path / path of this file
+
+#save img
+#with open("Y:\\ERIK\\Informatik\\Python\\xkcdComicGetter", "wb") as dir:
 #    dir.write(requests.get("http:" + imgLink).content)
+
 with open(basename(imgLink), "wb") as dir:
-    dir.write(requests.get(imgLink).content)
+    dir.write(requests.get("http:" + imgLink).content)
