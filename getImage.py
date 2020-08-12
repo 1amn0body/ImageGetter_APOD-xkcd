@@ -15,3 +15,6 @@ imgLink = soup.find(id="comic").find('img')['src']
 
 with open(basename(imgLink), "wb") as dir:
     dir.write(requests.get("http:" + imgLink).content)
+#get 2 older comics
+
+prevLink = soup.find('ul' class="comicNav").find('a' rel="prev")['href']
