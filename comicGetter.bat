@@ -7,3 +7,4 @@ mkdir imgs
 cd imgs
 
 python ..\getImage.py
+rem ..\getImage.exe
