@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup as bs
 from os.path import basename
-from os import mkdir
 
 def saveComic(theSoup):
     imgLnk = theSoup.find(id="comic").find('img')['src']
