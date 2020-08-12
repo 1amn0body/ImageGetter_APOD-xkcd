@@ -19,24 +19,17 @@ soup = bs(html_doc, 'html.parser')
 
 saveComic(soup)
 
-#########
-#get 2 older comics
+#get older comics
 prevLink = soup.find('ul', {'class': ["comicNav"]}).find('a', {'rel': ["prev"]})['href']
 rePrevLink = int(prevLink.replace('/', ''))
 
+i = 0
+while i < 2: #second value = number of old comics more
+    urls = ("https://xkcd.com/" + str(rePrevLink - i))
+    html_docs = requests.get(urls).text
 
-#soup2
-url2 = ("https://xkcd.com/" + str(rePrevLink))
-html_doc2 = requests.get(url2).text
+    soups = bs(html_docs, 'html.parser')
 
-soup2 = bs(html_doc2, 'html.parser')
+    saveComic(soups)
 
-saveComic(soup2)
-
-#soup3
-url3 = ("https://xkcd.com/" + str(rePrevLink - 1))
-html_doc3 = requests.get(url3).text
-
-soup3 = bs(html_doc3, 'html.parser')
-
-saveComic(soup3)
+    i = i + 1
