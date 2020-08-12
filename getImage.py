@@ -12,6 +12,7 @@ def saveComic(theSoup):
 
 #print(soup.prettify()) #print whole html document prettified
 
+#comic on main page (newest)
 url = "https://xkcd.com/"
 html_doc = requests.get(url).text
 
@@ -19,12 +20,12 @@ soup = bs(html_doc, 'html.parser')
 
 saveComic(soup)
 
-#get older comics
+#older comics
 prevLink = soup.find('ul', {'class': ["comicNav"]}).find('a', {'rel': ["prev"]})['href']
-rePrevLink = int(prevLink.replace('/', ''))
+rePrevLink = int(prevLink.replace('/', '')) #comicnumber
 
 i = 0
-while i < 2: #second value = number of old comics more
+while i < 2: #second value = number of old comics to download
     urls = ("https://xkcd.com/" + str(rePrevLink - i))
     html_docs = requests.get(urls).text
 
