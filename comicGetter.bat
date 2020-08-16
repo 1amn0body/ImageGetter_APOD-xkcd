@@ -1,4 +1,4 @@
-@echo on
+@echo off
 if exist imgs (
     rmdir /q /s imgs
 )
