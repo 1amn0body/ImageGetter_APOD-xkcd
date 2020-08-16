@@ -23,6 +23,16 @@ def rdconfig():
 
     os.chdir(out)
 
+def rdconfigException():
+    exception_e = True
+
+    while exception_e == True:
+        try:
+            rdconfig()
+        except Exception as e:
+            os.remove("comicGetterConfig.txt")
+            print("No valid filepath. Try again.")
+            mkconfig()
 
 def saveComic(theSoup):
     imgLnk = theSoup.find(id="comic").find('img')['src']
@@ -34,13 +44,7 @@ def saveComic(theSoup):
 
 #at start of program
 mkconfig()
-try:
-    rdconfig()
-except Exception as e:
-    os.remove("comicGetterConfig.txt")
-    print("No valid filepath. Try again.")
-    mkconfig()
-
+rdconfigException()
 
 
 #main page comic
