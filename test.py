@@ -29,6 +29,7 @@ def rdconfigException():
     while exception_e == True:
         try:
             rdconfig()
+            exception_e = False
         except Exception as e:
             os.remove("comicGetterConfig.txt")
             print("No valid filepath. Try again.")
