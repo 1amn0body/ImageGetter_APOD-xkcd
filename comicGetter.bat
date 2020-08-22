@@ -6,5 +6,5 @@ if exist imgs (
 mkdir imgs
 cd imgs
 
-python ..\getImage.py
-rem ..\getImage.exe
+python ..\getXkcdComics.py
+python ..\getAstronomyPictureOfTheDay.py
