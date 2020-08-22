@@ -24,7 +24,7 @@ prevLink = soup.find('ul', {'class': ["comicNav"]}).find('a', {'rel': ["prev"]})
 rePrevLink = int(prevLink.replace('/', '')) #comicnumber
 
 i = 0
-while i < 2: #second value = number of old comics to download
+while i < 0: #second value = number of old comics to download
     urls = ("https://xkcd.com/" + str(rePrevLink - i))
     html_docs = requests.get(urls).text
 
