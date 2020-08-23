@@ -4,7 +4,7 @@ from os.path import basename
 
 def saveComic(theSoup):
     imgLnk = theSoup.find('img')['src']
-    print("Astronomy picture of the day from https://apod.nasa.gov/apod/" + imgLnk)
+    print("Astronomy picture of the day from https://apod.nasa.gov/" + imgLnk)
 
     with open(basename(imgLnk), "wb") as dir:
         dir.write(requests.get("https://apod.nasa.gov/" + imgLnk).content)
