@@ -1,3 +1,5 @@
+"""#file is too comlex for simple file and/or directory operations
+
 import requests
 from bs4 import BeautifulSoup as bs
 from os.path import basename
@@ -71,3 +73,4 @@ while i < 2: #second value = number of old comics to download
     saveComic(soups)
 
     i = i + 1
+"""
