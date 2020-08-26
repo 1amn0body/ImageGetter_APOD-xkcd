@@ -7,4 +7,4 @@ mkdir imgs
 cd imgs
 
 python ..\getXkcdComics.py
-python ..\getAstronomyPictureOfTheDay.py
+python ..\getAPOD.py
