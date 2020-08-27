@@ -6,5 +6,4 @@ if exist imgs (
 mkdir imgs
 cd imgs
 
-python ..\getXkcdComic.py
-python ..\getAPOD.py
+python ..\runImageGetter.py
