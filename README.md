@@ -8,4 +8,4 @@ The image folder is removed everytime the batch is run.<br>
 A script to set up the Task Scheduler under Windows is not supported right now, but hopefully will be added in future.
 
 The executable .exe file is built with <a href="http://www.pyinstaller.org/" target="_blank">PyInstaller</a>.
-Other platform releases will may be added in the future.
+Other platform releases may be added in the future.
