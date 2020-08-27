@@ -5,7 +5,7 @@ The batch (<a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob
 The image folder is removed everytime the batch is run.
 SO DONT CHANGE THE PATH TO ONE WITH IMPORTANT FILES AND/OR FOLDERS!
 
-A sript to set up the Task Scheduler under Windows is not supported right now, but hopefully will be added in future.
+A script to set up the Task Scheduler under Windows is not supported right now, but hopefully will be added in future.
 
 The executable .exe file is built with <a href="http://www.pyinstaller.org/" target="_blank">PyInstaller</a>.
 Other platform releases will ma ybe added in the future.
