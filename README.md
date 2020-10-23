@@ -1,11 +1,14 @@
-# <bolder>ImageGetter_APOD-xkcd</bolder>
-This project is used to download the <a href="http://apod.nasa.gov/" target="_blank">Astronomic Picture of the Day (APOD)</a> and the latest Comic from <a href="http://xkcd.com/" target="_blank"> xkcd</a>. But you can download older ones too. To change the number there are loops in the files <a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/getXkcdComic.py">getXkcdComic.py</a> and <a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/getAPOD.py">getAPOD.py</a>.
+# ImageGetter_APOD-xkcd
 
-The batch (<a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/dist/runImageGetter.bat">Batch for .exe file</a>, <a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/runImageGetter.bat"> Batch for python files</a>) creates the image folder, runs the <a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/dist/runImageGetter.exe">.exe</a> (or the <a href="https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/runImageGetter.py">runImageGetter.py</a>) and downloads the pictures into the folder.
+
+
+This project is used to download the [Astronomic Picture of the Day (APOD)](http://apod.nasa.gov/) and the latest Comic from [xkcd](http://xkcd.com/). But you can download older ones too. To change the number there are loops in the files [getXkcdComic.py](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/getXkcdComic.py) and [getAPOD.py](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/getAPOD.py).
+
+The batch ([Batch for .exe file](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/dist/runImageGetter.bat), [Batch for python files](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/runImageGetter.bat)) creates the image folder, runs the [.exe](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/dist/runImageGetter.exe) (or the [runImageGetter.py](https://github.com/1amn0body/imageGetter_APOD-xkcdComic/blob/master/runImageGetter.py)) and downloads the pictures into the folder.
 The image folder is removed everytime the batch is executed.<br>
-<b>SO DONT CHANGE THE PATH TO ONE WITH IMPORTANT FILES AND/OR FOLDERS!</b>
+**SO DONT CHANGE THE PATH TO ONE WITH IMPORTANT FILES AND/OR FOLDERS!**
 
 A script to set up the Task Scheduler under Windows is not supported right now, but hopefully will be added in future.
 
-The executable .exe file is built with <a href="http://www.pyinstaller.org/" target="_blank">PyInstaller</a>.
+The executable .exe file is built with [PyInstaller](http://www.pyinstaller.org/).
 Other platform releases may be added in the future.
