@@ -6,6 +6,7 @@ The config file *imageGetter-cfg.ini* is created at the first start. The followi
 1. Custom storage path
 2. Auto-remove of files (only the downloaded ones)
 3. Custom number of image downloads (APOD, xkcd separately)
+
 Please follow the console instructions for setting them up.
 
 A [script to set up the Task Scheduler under Windows](https://github.com/1amn0body/ImageGetter_APOD-xkcd/blob/master/TaskSchedulerSetup.bat)(Please help me with it!) is not supported right now, but hopefully will be added in future.
