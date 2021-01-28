@@ -17,7 +17,7 @@ def readConfig(cfgName="imageGetter-cfg.ini"):
                 print("Tried to re-create save directory but failed.")
 
         clearImages = cfg['IMAGES'].getboolean('clear_images')
-        max_APOD = int(cfg['IMAGES']['max_APOD'])
+        max_APOD = int(cfg['IMAGES']['max_apod'])
         max_xkcd = int(cfg['IMAGES']['max_xkcd'])
 
         savedImages = cfg['SAVED_IMAGES']['images']
@@ -128,7 +128,7 @@ def createConfig(cfgName="imageGetter-cfg.ini"):
     cfg['SAVEPATH'] = {'path': path}
     cfg['IMAGES'] = {
                     'clear_images': clearImages,
-                    'max_APOD': apodnum,
+                    'max_apod': apodnum,
                     'max_xkcd': xkcdnum
                     }
     cfg['SAVED_IMAGES'] = {'images': ''}
