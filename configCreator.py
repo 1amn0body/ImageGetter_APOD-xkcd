@@ -1,4 +1,4 @@
-import configparser, os
+import configparser, os, taskScheduler
 
 osSep = os.path.sep
 currDir = os.getcwd()
@@ -122,6 +122,22 @@ def createConfig(cfgName="imageGetter-cfg.ini"):
             break
         except Exception as e:
             print("That was not a valid number. Try again...")
+            continue
+    while True: # TaskSchedulerSetup
+        try:
+            setupScheduler = input("Set up task scheduler? (y/n): ")[0].lower()
+            if setupScheduler == 'y' or setupScheduler == 'n':
+                if setupScheduler == 'y':
+                    taskScheduler.setupScheduler()
+                else:
+                    print("Not setting up task scheduler.")
+                print()
+                break
+
+            print("That was some other character, please try again.")
+            continue
+        except Exception as e:
+            print("Something went wrong, please try again.")
             continue
 
     cfg = configparser.ConfigParser() # create config object

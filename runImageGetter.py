@@ -8,3 +8,7 @@ imgs += getAPOD.runGetter(path, max_APOD)
 imgs += getXkcdComic.runGetter(path, max_xkcd)
 
 configCreator.updateSavedImages(imgs, cfgName=cfgName)
+
+"""************************************************
+* currently using TaskScheduler_Windows as branch *
+************************************************"""
