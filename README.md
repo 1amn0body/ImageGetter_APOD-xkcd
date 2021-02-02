@@ -9,7 +9,7 @@ The config file *imageGetter-cfg.ini* is created at the first start. The followi
 
 Please follow the console instructions for setting them up.
 
-A script to set up the Task Scheduler under the different Operating Systems aqnd Distributions is not supported right now, but hopefully will be added in future.
+A script to set up the Task Scheduler under the different Operating Systems and Distributions is not supported right now, but hopefully will be added in future.
 
 The executable .exe file is built with [PyInstaller](https://www.pyinstaller.org/).
 Other platform releases may be added in the future.
