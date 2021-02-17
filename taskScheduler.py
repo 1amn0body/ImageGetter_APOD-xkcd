@@ -25,11 +25,23 @@ def setupScheduler():
         elif baseDist == "fedora":
             pass
 
-        elif baseDist == "slackware":
+        elif baseDist == "opensuse":
             pass
 
-        elif baseDist == "bsd":
+        elif baseDist == "rhel":
             pass
+
+        elif baseDist == "ubuntu":
+            pass
+
+        elif baseDist == "solaris":
+            pass
+
+    elif baseDist == "freebsd":
+            pass
+
+    #elif baseDist == "slackware":
+    #    pass
 
         else:
             print("Unable to detect the Linux base distribution or it is unknown.\nPlease set up a task scheduler yourself.")
